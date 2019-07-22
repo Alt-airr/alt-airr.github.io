@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/fonts.css">
+     <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap&subset=latin-ext" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Miss+Fajardose&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+       <div class="container">
+           
+           
+           
+           
+           
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Hosting plans</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+               </div>
+           
+           
+
+           
+       </div>
+        
+    </header>
+    
+    
+    <section id="s_first">
+       <div class="container">
+        
+        <div class="main_title" >
+        <p>Royal Season</p>
+        
+        </div>
+        
+           
+         <div class="login-page clearfix">
+         
+  <div class="form">
+    
+    <p>If you are our regular customer you can log in to improve the quality of service</p>
+    
+    
+    <form class="login-form">
+      <input id="a" type="text" placeholder="Login"/>
+      <input id="b" type="password" placeholder="Password"/>
+      <button onclick="check()">login</button>
+      
+      <span>(Login: Royal; <br>
+      Password: 4321)</span> 
+      
+    </form>
+    
+    
+  </div>
+  
+  
+</div>        
+                
+                 
+                       
+                             
+                                   
+                                               
+       </div>
+    
+        
+    </section>
+    
+    
+    
+    <section id="s_second">
+        <div class="container">
+            
+           
+           
+           
+           
+           
+            <div class="customiz">
+             
+             
+             
+            <div class="tuning">
+               <h2 class="title">
+                 Choice your room
+             </h2>
+                
+               <div class="character ">
+    
+    <p class="item">Type of number  </p>
+    <p class="item">Guests  </p>
+    <p class="item">Number of nights  </p>
+    <p class="item">View </p>
+    <p class="item">Special wishes  </p>   
+    
+    
+        
+         </div>
+
+         <div class="value">
+
+             <select class="item" name="" id="room_type">
+                 <option>Superior room </option>
+                 <option>Suite room</option>
+                 <option>Junior suite room </option>
+                 <option>Superior room </option>
+                 <option>Standart </option>
+             </select>
+
+
+             
+             <p class="item quantity" >
+                <span id="guests">___</span>
+                 
+                 <button class="plus_button" onclick="moreGuests()"> + </button>
+
+                 <button class="plus_button" onclick="lessGuests()"> – </button></p>
+                 
+                 
+             <p class="item quantity" > <span id="nights">___</span>
+             
+             
+             
+             
+             <button class="plus_button" onclick="moreNights()"> + </button>
+
+            <button class="plus_button" onclick="lessNights()"> – </button>
+             
+             </p>
+             <select class="item " name="" id="with_view_on">
+                 <option>on the Sea</option>
+                 <option>on the Beach </option>
+                 <option>on the Frest </option>
+                 <option>do not metter </option>
+
+             </select>
+            <input class="item" id="wishes" type="text"> 
+  
+   
+    
+    
+    
+    
+          
+               </div> 
+                
+              
+                  <button id="pick"> Pick a room</button>
+     
+                                            
+            </div>    
+             
+             
+             
+             
+             
+         </div>
+           
+             
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+        </div>
+        
+        
+        
+        
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    <script src="Script.js">
+    </script>
+    
+</body>
+</html>

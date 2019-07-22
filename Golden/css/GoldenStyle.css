@@ -1,0 +1,174 @@
+
+body {padding: 0; margin: 0;}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div {box-sizing: border-box}
+
+.container 
+    { width: 930px; 
+margin: 0 auto;}
+
+header {background: url(../img/first-bg.jpg) no-repeat center top / cover; padding-bottom: 160px}
+    
+
+
+.logo {margin-top: 41px; float: left}
+
+nav {float: right}
+
+.menu 
+        {padding: 0;
+        margin-top: 55px; 
+        display: block;
+        text-decoration: none;
+color: aliceblue}
+
+.menu li 
+        {float: left; 
+        display: block;
+margin-left: 41px;
+font-size: 14px}
+
+.menu a {color: aliceblue;
+text-decoration: none;
+text-transform: uppercase;}
+
+
+
+.titles_first {font-size: 40px;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+margin-top: 180px}
+
+h1 {font-size: 75px;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+margin: 15px}
+
+
+.button {background: #fed136;
+    margin: 0 auto;
+    width: 240px;
+    display: block;
+    text-decoration: none;
+    color: #484543;
+    border-radius:3px;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;}
+
+
+.title 
+    {padding-top: 140px}
+
+
+.title h2
+    {width: auto;
+    font-size: 40px;
+    color: #222222;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;}
+
+
+
+.services {margin-top: 80px;
+padding-bottom: 120px }
+
+.title p 
+    {font-size: 10px;
+    color: #777777;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px}
+
+
+.service_item {float: left;
+width: 270px;
+text-align: center;
+line-height: 1.4em}
+
+
+
+.service_item h3 {font-size 18px;
+    margin-bottom: 10px;}
+
+
+.service_item p {color: #777 ;
+font-size: 14px}
+
+
+.service_item:last-child {float: right;}
+
+.service_item:nth-child(2) {margin-left: 50px}
+
+#portfolio {background: #f7f7f7;
+    margin-top: 60px;
+padding-bottom: 120px}
+
+.works {margin-top: 70px}
+
+.works img {float: left}
+
+.works img:last-child {float: right}
+
+.works img:nth-child(2) {padding-left: 28px}
+
+#about {padding-top: 80px;
+background: color="#ffffff"}
+
+
+
+.about_text1 {width: 300px;
+    float: left;
+text-align: right;
+line-height: 1.3em}
+
+.about_text2 {width: 300px;
+    float: right;
+text-align: left;
+line-height: 1.3em}
+
+h4 {font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+margin: 0 auto}
+
+h5 {margin: 0}
+
+
+
+
+.about_img1 {display: block;
+margin-left: 335px}
+
+.about_img2 {display: block;
+margin-left: 335px}
+
+
+.about {padding: 30px}
+
+.about p {color: #777 ;
+font-size: 14px}
+
+
+footer {padding: 30px 0 50px 0;
+        background-color: #f7f7f7;
+        }
+
+footer p {color: #777 ;
+font-size: 14px;
+text-align: center}
+
+
+.About_All {margin: 90px 0 }
