@@ -5,88 +5,74 @@ body {
     text-shadow: 0 0 1px 0 rgba(1);
     width: 100%;
     color: #d2d6d9;
-    text-shadow: white 0 0 2px;
+     text-shadow: white 0 0 2px;
 }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box;}
 
 .f-left {
-    justify-content: flex-start;
+    float: left;
 }
 
 .f-right {
-    justify-content: flex-end;
+    float: right
 }
 
-.hide {
-    display: none
+.hide {display: none
 }
 
 .h2 {
     font-size: 5vh;
-    position: relative;
 }
 
 .p {
     font-size: 2.5vh;
-    line-height: 1.5em;
-    overflow: hidden;
+    line-height: 1.5em; 
 }
 
 
-::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar { 
+    display: none; 
 }
 
-#menu {
-    position: fixed;
-    top: 30vh;
-    right: 0;
-    z-index: 999
-}
+#menu {position: fixed;
+top: 30vh;
+right: 0;
+z-index: 999}
 
-#menu li {
-    list-style-type: none;
-}
+#menu li {list-style-type: none;}
 
 #menu a {
-    height: 3vh;
+height: 3vh;
     width: 3vh;
     border-radius: 50px;
-    -moz-box-shadow: 0 0 10px white;
-    -webkit-box-shadow: 0 0 10px white;
-    box-shadow: 0 0 10px white;
+    -moz-box-shadow:0 0 10px white; 
+    -webkit-box-shadow:0 0 10px white; 
+    box-shadow:0 0 10px white;
     margin: 3vh;
 }
 
-#menu a:hover {
-    background: grey;
-    transition: 1.5s
-}
+#menu a:hover {background: grey;
+transition: 1.5s}
 
-#menu a:active {
-    background: aliceblue;
+#menu a:active {background: aliceblue;
     transition: 1s
 }
 
 #menu a {
     display: block;
-    text-decoration: none;
+  text-decoration: none;
     padding: 1vh;
     border-radius: 70px;
 }
 
-.actv {
-    background: aliceblue
-}
+.actv {background: aliceblue}
 
 #universe {
+/*    background: url(img/ns1.jpg);*/
     background: url(img/bg1.png);
     background-size: cover;
-    height: 100vh;
-    display: flex;
+    height: 100vh
 }
 
 .universe {
@@ -94,13 +80,12 @@ body {
     padding: 5vh
 }
 
-.universe h2 {
-    left: 7vw;
+.universe h2 {left: 7vw;
     position: absolute;
 }
-
+    
 .universe p {
-    top: 17vh;
+    top:17vh;
     left: 7vw;
     position: absolute;
     width: 36vw;
@@ -108,18 +93,18 @@ body {
 
 #universe__img1 {
     position: absolute;
-    top: 15vh;
+    top:15vh;
     right: 0;
     width: 80vw;
     height: 93vh;
 }
 
 
+
 #milky {
     background: url(img/bg2.png);
     background-size: cover;
     height: 110vh;
-    display: flex;
 }
 
 .milky h2 {
@@ -136,26 +121,23 @@ body {
     right: 3vh;
     width: 35vw;
 }
-
 #milky__img1 {
     position: absolute;
-    top: 164vh;
+    top:164vh;
     left: -5vw;
     width: 70vw;
     height: 100vh;
 }
 
 
+
 #solar {
     background: url(img/bg3.jpg);
     background-size: cover;
     height: 110vh;
-    display: flex;
 }
 
-.solar img {
-    position: absolute;
-}
+.solar img {position: absolute;}
 
 #mer {
     width: 5vw;
@@ -233,13 +215,13 @@ body {
     width: 35vw
 }
 
-
 #earth {
     background: url(img/bg4.jpg);
     height: 110vh;
     background-size: cover;
-    display: flex;
 }
+
+
 
 #earth__p1 {
     position: absolute;
@@ -257,18 +239,21 @@ body {
 }
 
 #earth__img1 {
-    position: absolute;
+     position: absolute;
     width: 43vw;
     height: 43vw;
-    top: 510vh;
+    top: 530vh;
     left: 28vw;
 }
 
+#void {
+    background: black;
+    height: 400vh
+}
 
 #landing {
     background: url(img/landing.jpg);
-    height: 100vh;
+    height: 70vh;
     background-size: cover;
     margin-bottom: -5vh;
-    display: flex;
 }
