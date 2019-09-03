@@ -3,13 +3,13 @@
 
 
 $(window).scroll(function(){
-    
-    var st = $(this).scrollTop();
-    
+
+    const st = $(this).scrollTop();
+
     $(".parallax").css({
-        
+
         "transform" : "translate 0%, " + st + "%"
-        
+
     });
 });
 
@@ -29,53 +29,54 @@ $(function () {
 });
 
 
+//
+// let anchors = [];
+// const currentAnchor = -1;
+// let isAnimating  = false;
+// $(function(){
+//     function updateAnchors() {
+//         anchors = [];
+//         $('.anchor').each(function(i, element){
+//             anchors.push( $(element).offset().top );
+//         });
+//     }
+//     $('body').on('mousewheel', function(e){
+//         e.preventDefault();
+//         e.stopPropagation();
+//         if( isAnimating ) {
+//             return false;
+//         }
+//         isAnimating  = true;
+//         if( e.originalEvent.wheelDelta >= 100 && e.originalEvent.wheelDelta <=1000 ) {
+//             currentAnchor--;
+//         }else{
+//             currentAnchor++;
+//         }
+//         if( currentAnchor > (anchors.length - 1)
+//            || currentAnchor < 0 ) {
+//             currentAnchor = 0;
+//         }
+//         isAnimating  = true;
+//         $('html').animate({
+//             scrollTop: parseInt( anchors[currentAnchor] )
+//         }, 800, function(){
+//             isAnimating  = false;
+//         });
+//     });
+//     updateAnchors();
+// });
 
-var anchors = [];
-var currentAnchor = -1;
-var isAnimating  = false;
-$(function(){
-    function updateAnchors() {
-        anchors = [];
-        $('.anchor').each(function(i, element){
-            anchors.push( $(element).offset().top );
-        });
-    }
-    $('body').on('mousewheel', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        if( isAnimating ) {
-            return false;
-        }
-        isAnimating  = true;
-        if( e.originalEvent.wheelDelta >= 0 ) {
-            currentAnchor--;
-        }else{
-            currentAnchor++;
-        }
-        if( currentAnchor > (anchors.length - 1) 
-           || currentAnchor < 0 ) {
-            currentAnchor = 0;
-        }
-        isAnimating  = true;
-        $('html').animate({
-            scrollTop: parseInt( anchors[currentAnchor] )
-        }, 1000, 'swing', function(){
-            isAnimating  = false;
-        });
-    });
-    updateAnchors();   
-});
 
 
 
 $(window).scroll(function(){
-    
-    var st = $(this).scrollTop();
-    
+
+    const st = $(this).scrollTop();
+
     console.log(st)
-    
+
     $(".parallax").css({
-        
+
         "transform" : "translate(0%, -" + st/10 + "%"
     });
 });
@@ -88,24 +89,23 @@ $(document).ready(function(){
 
         event.preventDefault();
 
-        var id  = $(this).attr('href'),
+        let id  = $(this).attr('href'),
 
             top = $(id).offset().top;
-       
+
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
 
 
 
-
  $(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-     var unih = $("#universe").height();
-     var milh = $("#milky").height();
-     var solh = $("#solar").height();
-     var earh = $("#earth").height();
-     var lanh = $("#landing").height();
+    const scroll = $(window).scrollTop();
+     const unih = $("#universe").height();
+     const milh = $("#milky").height();
+     const solh = $("#solar").height();
+     const earh = $("#earth").height();
+     const lanh = $("#landing").height();
      
    
      if (scroll <= unih ) {
